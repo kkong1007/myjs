@@ -84,14 +84,14 @@ function getCalender() {
 //    nowDate.innerText = date;
 //    nowYear.innerText = year;
 
-      let ids = ["dayname", "month", "daynum", "year"];
-      let values = [week[day], monthname[month], date, year];
+    let ids = ["dayname", "month", "daynum", "year"];
+    let values = [week[day], monthname[month], date, year];
 
-      for (let i = 0; i <ids.length; i++){
-          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
-      }
+    for (let i = 0; i <ids.length; i++){
+        document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    }
 
-      daynum.innerText = date<10 ? `0${date}` : date;
+    daynum.innerText = date<10 ? `0${date}` : date;
   }
 
 function init() {
